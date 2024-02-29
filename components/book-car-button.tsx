@@ -48,7 +48,7 @@ function BookCarButton({
     
     const { error: insertError } = await supabase
     .from('Order_Details_')
-    .insert({ Customer_id: newCustomerID, Price_id: price_id, NumberOfDays: numberOfDays, totalPrice: totalPrice})
+    .insert({ Customer_id: newCustomerID, Price_id: price_id, NumberOfDays: numberOfDays})
 
     console.log("Inserted error:", insertError)
 
