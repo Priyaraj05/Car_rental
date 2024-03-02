@@ -12,7 +12,6 @@ The Car Rental Portal is an online platform designed to streamline the process o
 ## Requirements
  - Latest version of Git
  - Latest version of NodeJS
- - Any compatible OS and Browser
 
 ## Installation
 Make sure git is installed in your computer.
