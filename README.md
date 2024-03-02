@@ -5,13 +5,12 @@ The Car Rental Portal is an online platform designed to streamline the process o
 
 ## Features
 - **Extensive Car Catalog:** Access a wide range of cars with detailed specifications and pricing information.
-- **Advanced Filtering Options:** Refine search results based on criteria such as city, company, model, year, miles driven, and color.
+- **Advanced Filtering Options:** Refine search results based on criteria such as city, and model.
 - **Single Car Selection:** Users can select only one car from the filtered list for booking.
-- **Validation Mechanisms:** Pop-up reminders prompt users to select filtering options before proceeding to checkout if none are chosen.
 - **Dynamic Price Calculation:** Final rental price is dynamically calculated based on the selected car and rental duration.
 
 ## Requirements
- - Lastest version of Git
+ - Latest version of Git
  - Latest version of NodeJS
  - Any compatible OS and Browser
 
