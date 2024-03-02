@@ -11,6 +11,8 @@ export const metadata = {
 
 export default async function SearchCar() {
 
+  // The data is fetched from the database using the supabaseClient
+
   const { data: tableData } = await supabase
   .from("Price_Catalog")
   .select(`

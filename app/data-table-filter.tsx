@@ -30,6 +30,11 @@ interface DataTableFacetedFilterProps<TData, TValue> {
   }[]
 }
 
+// This function defines a filter for the Car table
+// This function takes in a column, title, and options as props
+// Options is an array of objects with label and value properties
+// It returns a React component that renders a filter for the column
+
 export function DataTableFilter<TData, TValue>({
   column,
   title,

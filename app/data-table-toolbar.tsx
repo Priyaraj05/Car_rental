@@ -11,6 +11,11 @@ interface DataTableToolbarProps<TData> {
   data: Price_Catalog 
 }
 
+// This function defines a toolbar for the Car table
+// It takes in a table and data as props
+// Data is passed to get unique cities and models
+// It returns a React component that renders a toolbar with two filters and a button
+
 export function DataTableToolbar<TData>({
   table,
   data
@@ -65,15 +70,6 @@ export function DataTableToolbar<TData>({
           </Button>
         )}
       </div>
-      {/* <div className="flex-1 text-sm text-muted-foreground">
-        { table.getFilteredSelectedRowModel().rows.length} of{" "}
-        {table.getFilteredRowModel().rows.length} row(s) selected.
-  </div> */}
-  {/* <pre>{JSON.stringify(table.getState().rowSelection, null, 2)}</pre> */}
-  {/* <pre>{table.getSelectedRowModel().rows.map(
-    (row) => JSON.stringify(row.original, null, 2)
-  )}</pre> */}
-
     </div>
   )
 }

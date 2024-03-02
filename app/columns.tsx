@@ -5,6 +5,9 @@ import { ColumnDef } from "@tanstack/react-table"
 import { Checkbox } from "@/components/ui/checkbox"
 
 
+// This function defines the columns for the Car table
+// Reference: https://tanstack.com/table/v8/docs/guide/column-defs
+
 export const columns: ColumnDef<Price_Catalog>[] = [
   {
     id: "select",

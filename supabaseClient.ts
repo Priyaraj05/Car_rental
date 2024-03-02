@@ -1,3 +1,5 @@
+// Creating the Supabase client to connect to the database
+
 import { createClient } from '@supabase/supabase-js'
 import { Database } from './supabase'
 

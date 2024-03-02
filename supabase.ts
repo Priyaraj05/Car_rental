@@ -25,29 +25,6 @@ export type Database = {
           Color?: string | null
           Model?: string | null
         }
-        Relationships: [
-          {
-            foreignKeyName: "public_Car_Details_Model_fkey"
-            columns: ["Model"]
-            isOneToOne: false
-            referencedRelation: "Car_Make_Model"
-            referencedColumns: ["Model"]
-          }
-        ]
-      }
-      Car_Make_Model: {
-        Row: {
-          Make: string | null
-          Model: string
-        }
-        Insert: {
-          Make?: string | null
-          Model: string
-        }
-        Update: {
-          Make?: string | null
-          Model?: string
-        }
         Relationships: []
       }
       City_Info: {
@@ -98,21 +75,18 @@ export type Database = {
           NumberOfDays: number | null
           Order_id: number
           Price_id: number | null
-          totalPrice: number | null
         }
         Insert: {
           Customer_id?: number | null
           NumberOfDays?: number | null
           Order_id?: number
           Price_id?: number | null
-          totalPrice?: number | null
         }
         Update: {
           Customer_id?: number | null
           NumberOfDays?: number | null
           Order_id?: number
           Price_id?: number | null
-          totalPrice?: number | null
         }
         Relationships: [
           {
@@ -139,7 +113,7 @@ export type Database = {
         }
         Insert: {
           NumberOfDays: number
-          Price_id?: number
+          Price_id: number
           TotalPrice?: number | null
         }
         Update: {
@@ -147,15 +121,7 @@ export type Database = {
           Price_id?: number
           TotalPrice?: number | null
         }
-        Relationships: [
-          {
-            foreignKeyName: "public_Order_Pricing_Price_id_fkey"
-            columns: ["Price_id"]
-            isOneToOne: false
-            referencedRelation: "Price_Catalog"
-            referencedColumns: ["price_id"]
-          }
-        ]
+        Relationships: []
       }
       Price_Catalog: {
         Row: {
@@ -213,15 +179,6 @@ export type Database = {
           c_address: string
         }
         Returns: number
-      }
-      insert_order_details: {
-        Args: {
-          o_customer_id: number
-          o_price_id: number
-          o_numberofdays: number
-          o_totalprice: number
-        }
-        Returns: undefined
       }
     }
     Enums: {
